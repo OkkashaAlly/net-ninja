@@ -14,19 +14,13 @@ function DropDown() {
         </button>
         <ul className="dropdown-menu" aria-labelledby="book-dropdown">
           <li>
-            <a href="" className="dropdown-item">
-              Become React superhero{" "}
-            </a>
+            <button className="dropdown-item">Become React superhero </button>
           </li>
           <li>
-            <a href="" className="dropdown-item">
-              Conquering Vue.js
-            </a>
+            <button className="dropdown-item">Conquering Vue.js</button>
           </li>
           <li>
-            <a href="" className="dropdown-item">
-              Levelup your Next.js
-            </a>
+            <button className="dropdown-item">Levelup your Next.js</button>
           </li>
         </ul>
       </div>
