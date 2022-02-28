@@ -1,11 +1,11 @@
 import React from "react";
 import ReactDOM from "react-dom";
+import * as bootstrap from "bootstrap";
 import App from "./App";
-// import "bootstrap/dist/css/bootstrap.min.css";
 import "./index.scss";
-import "bootstrap/dist/js/bootstrap.bundle.min";
 import "bootstrap-icons/font/bootstrap-icons.css";
-import { Tooltip } from "bootstrap";
+// import "bootstrap/dist/js/bootstrap.bundle.min";
+// import "bootstrap/dist/css/bootstrap.min.css";
 
 ReactDOM.render(
   <React.StrictMode>
@@ -14,9 +14,7 @@ ReactDOM.render(
   document.getElementById("root")
 );
 
-let tooltipTriggerList = [].slice.call(
-  document.querySelectorAll('[data-bs-toggle="tooltip"]')
-);
+let tooltipTriggerList = [].slice.call(document.querySelectorAll(".tt"));
 tooltipTriggerList.map(function (tooltipTriggerEl) {
-  return new Tooltip(tooltipTriggerEl);
+  return new bootstrap.Tooltip(tooltipTriggerEl);
 });
